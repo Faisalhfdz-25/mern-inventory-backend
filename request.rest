@@ -1,0 +1,59 @@
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/2
+
+###
+POST http://localhost:5000/users/
+Content-Type: application/json
+
+{
+    "name": "Admin Flashcode",
+    "email": "admin@gmail.com",
+    "gender": "Male"
+}
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type: application/json
+
+{
+    "name": "Flash Code",
+    "email": "flash@gmail.com",
+    "gender": "Male"
+}
+###
+DELETE http://localhost:5000/users/1
+
+
+###
+GET http://localhost:5000/products
+
+###
+GET http://localhost:5000/products/2
+
+###
+POST http://localhost:5000/products/
+Content-Type: application/json
+
+{
+    "name": "Pulsa 15rb",
+    "price": 17000
+}
+
+###
+PATCH http://localhost:5000/products/2
+Content-Type: application/json
+
+{
+    "name": "Pulsa 10rb",
+    "price": 12000
+}
+###
+DELETE http://localhost:5000/products/3
+
+
+
+
+
+
